@@ -1,0 +1,31 @@
+package Fundamentos;
+import java.util.Scanner;
+
+public class javaexercio2 {
+public static void main(String[] args) {
+	double[]Km = new double [14];
+	double semana1=0;
+	double semana2=0;
+	double soma=0;
+	double media =0;
+	Scanner entrada = new
+			Scanner (System.in);
+	 for(int x=0;x<Km.length; x++ ){
+		System.out.println("Digite os Km do dia ");
+		Km[x] = entrada.nextDouble();
+		if (x+1 < 8) {
+			semana1 += Km[x];
+		} else {
+			semana2 += Km[x];
+		}
+		media += Km[x];
+	}
+	 System.out.println(semana1/7);
+	 
+	 System.out.println(semana2/7);
+	 
+	 
+	 System.out.println(media/14);
+			
+}
+}
